@@ -1,6 +1,7 @@
 from time import time 
 def timer(func):
     def f(*args, **kwargs):
+        print("This are the argument:",*args)
         before = time()
         rv = func(*args, **kwargs)
         after = time()
